@@ -1,0 +1,98 @@
+import '../models/waypoint.dart';
+
+class WaypointRepository {
+  static final List<Waypoint> defaultWaypoints = [
+    const Waypoint(
+      id: "peter-iredale",
+      name: "Peter Iredale Shipwreck",
+      state: "Oregon",
+      lat: 46.1784,
+      lng: -123.9806,
+      elevationFeet: 10,
+      category: Category.coastal,
+      targetLightPhase: "Dawn / Sunrise",
+      idealTimeMin: 375, // 06:15 AM
+      windowStartMin: 345,
+      windowEndMin: 420,
+      serviceDurationMinutes: 60,
+      recommendedFocalLength: "16-35mm Ultra-Wide",
+      compositionTip: "Frame rusted iron ribs against receding low tide surf reflection.",
+      geologicalNote: "Coastal sand bar spit at the mouth of the Columbia River Bar.",
+      placeId: "ChIJW1JgK9fKlVQRw3hQ6F8-6mY",
+    ),
+    const Waypoint(
+      id: "cannon-beach",
+      name: "Haystack Rock & Needles",
+      state: "Oregon",
+      lat: 45.8872,
+      lng: -123.9625,
+      elevationFeet: 15,
+      category: Category.coastal,
+      targetLightPhase: "Morning Low Tide",
+      idealTimeMin: 480, // 08:00 AM
+      windowStartMin: 450,
+      windowEndMin: 540,
+      serviceDurationMinutes: 45,
+      recommendedFocalLength: "24-70mm Standard Zoom",
+      compositionTip: "Tidepool reflections with Tufted Puffin nesting ledges in sharp relief.",
+      geologicalNote: "235-foot Miocene basalt sea stack formed by Columbia River flood basalts.",
+      placeId: "ChIJXw0V513glVQR40tEwh4MflU",
+    ),
+    const Waypoint(
+      id: "cape-kiwanda",
+      name: "Cape Kiwanda Dory Launch",
+      state: "Oregon",
+      lat: 45.2164,
+      lng: -123.9723,
+      elevationFeet: 40,
+      category: Category.coastal,
+      targetLightPhase: "Golden Hour Sunset",
+      idealTimeMin: 1140, // 07:00 PM
+      windowStartMin: 1080,
+      windowEndMin: 1200,
+      serviceDurationMinutes: 75,
+      recommendedFocalLength: "70-200mm Telephoto",
+      compositionTip: "Dory boats surf landing through golden wave crests beneath sandstone bluffs.",
+      geologicalNote: "Fragile yellow-orange sandstone sea cliffs sculpted by Pacific wave energy.",
+      placeId: "ChIJ8wT27PqylFQR5tK59bV8Rsw",
+    ),
+    const Waypoint(
+      id: "timberline-lodge",
+      name: "Timberline Lodge Mt Hood",
+      state: "Oregon",
+      lat: 45.3311,
+      lng: -121.7111,
+      elevationFeet: 6000,
+      category: Category.mountain,
+      targetLightPhase: "Alpenglow / Blue Hour",
+      idealTimeMin: 1215, // 08:15 PM
+      windowStartMin: 1170,
+      windowEndMin: 1260,
+      serviceDurationMinutes: 60,
+      recommendedFocalLength: "24-70mm or 14mm Astro",
+      compositionTip: "Illuminated stone archways against southern sky Milky Way alignment.",
+      geologicalNote: "Active stratovolcano summit in the Cascade Volcanic Arc.",
+      placeId: "ChIJbXlAomjXllQR8t6NqN3qE2w",
+    ),
+    const Waypoint(
+      id: "painted-hills",
+      name: "Painted Hills John Day",
+      state: "Oregon",
+      lat: 44.6622,
+      lng: -120.2744,
+      elevationFeet: 2100,
+      category: Category.desert,
+      targetLightPhase: "Warm Sidelight Sunset",
+      idealTimeMin: 1050, // 05:30 PM
+      windowStartMin: 1020,
+      windowEndMin: 1110,
+      serviceDurationMinutes: 60,
+      recommendedFocalLength: "70-200mm Telephoto Compression",
+      compositionTip: "Cross-lighting exaggerates red and yellow laterite clay banding strata.",
+      geologicalNote: "Oligocene floodplain mudstones preserved across 35 million years.",
+      placeId: "ChIJv18F8Dqbl1QRZ0J4Xg4E2tU",
+    ),
+  ];
+
+  static List<Waypoint> getAllWaypoints() => List.unmodifiable(defaultWaypoints);
+}
