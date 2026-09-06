@@ -1,0 +1,1 @@
+{"name":"Flutter DevContainer","image":"ghcr.io/cirruslabs/flutter:stable","runArgs":["--cap-drop=ALL","--security-opt=no-new-privileges:true"]}

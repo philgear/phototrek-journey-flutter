@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../data/models/school_trip_plan.dart';
 import '../../domain/vrp/school_bus_vrp_optimizer.dart';
 import '../theme/lcars_theme.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class SchoolTripScreen extends StatefulWidget {
   const SchoolTripScreen({super.key});
@@ -78,7 +77,7 @@ class _SchoolTripScreenState extends State<SchoolTripScreen> {
               color: LcarsTheme.surfaceDark,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
-                color: headcount.isAllAccountedFor ? LcarsTheme.greenSuccess.withOpacity(0.5) : LcarsTheme.amberPrimary,
+                color: headcount.isAllAccountedFor ? LcarsTheme.greenSuccess.withValues(alpha: 0.5) : LcarsTheme.amberPrimary,
               ),
             ),
             child: Row(
@@ -131,7 +130,7 @@ class _SchoolTripScreenState extends State<SchoolTripScreen> {
             decoration: BoxDecoration(
               color: LcarsTheme.surfaceDark,
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: LcarsTheme.greenSuccess.withOpacity(0.4)),
+              border: Border.all(color: LcarsTheme.greenSuccess.withValues(alpha: 0.4)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

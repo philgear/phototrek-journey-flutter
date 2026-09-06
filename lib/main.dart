@@ -50,7 +50,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         selectedIndex: _currentIndex,
         onDestinationSelected: (idx) => setState(() => _currentIndex = idx),
         backgroundColor: LcarsTheme.surfaceDark,
-        indicatorColor: LcarsTheme.amberPrimary.withOpacity(0.3),
+        indicatorColor: LcarsTheme.amberPrimary.withValues(alpha: 0.3),
         destinations: const [
           NavigationDestination(icon: Icon(Icons.map_outlined), selectedIcon: Icon(Icons.map), label: 'Map'),
           NavigationDestination(icon: Icon(Icons.checklist_outlined), selectedIcon: Icon(Icons.checklist), label: 'Bucket List'),

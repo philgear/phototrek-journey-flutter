@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "phototrek-journey-flutter",
+  "docker": {
+    "image": "ghcr.io/cirruslabs/flutter:stable",
+    "network": "none",
+    "readOnlyHostMount": true,
+    "workdir": "/workspace",
+    "command": "sh"
+  },
+  "windowsSandbox": {
+    "networking": "Disable",
+    "readOnly": true,
+    "logonCommand": "powershell.exe -NoExit -Command Set-Location 'C:\\Users\\WDAGUtilityAccount\\Desktop\\Project'"
+  }
+}

@@ -23,7 +23,6 @@ class LcarsTheme {
         primary: amberPrimary,
         secondary: cyanSecondary,
         surface: surfaceDark,
-        background: backgroundDark,
       ),
       appBarTheme: const AppBarTheme(
         backgroundColor: surfaceDark,

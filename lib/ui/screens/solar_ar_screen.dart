@@ -45,7 +45,7 @@ class _SolarArScreenState extends State<SolarArScreen> {
               decoration: BoxDecoration(
                 color: LcarsTheme.surfaceDark,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: LcarsTheme.amberPrimary.withOpacity(0.4)),
+                border: Border.all(color: LcarsTheme.amberPrimary.withValues(alpha: 0.4)),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -80,7 +80,7 @@ class _SolarArScreenState extends State<SolarArScreen> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: LcarsTheme.surfaceDark,
-                    border: Border.all(color: LcarsTheme.cyanSecondary.withOpacity(0.5), width: 3),
+                    border: Border.all(color: LcarsTheme.cyanSecondary.withValues(alpha: 0.5), width: 3),
                   ),
                   child: Stack(
                     alignment: Alignment.center,

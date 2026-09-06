@@ -40,7 +40,7 @@ class _RouteSolverScreenState extends State<RouteSolverScreen> {
             decoration: BoxDecoration(
               color: LcarsTheme.surfaceDark,
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: LcarsTheme.cyanSecondary.withOpacity(0.4)),
+              border: Border.all(color: LcarsTheme.cyanSecondary.withValues(alpha: 0.4)),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,

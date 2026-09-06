@@ -43,3 +43,16 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# === Sandbox & Security Directives ===
+*.wsb
+.sandbox-cache/
+.sandbox-output/
+.scratch/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*service-account*.json
+*firebase-adminsdk*.json

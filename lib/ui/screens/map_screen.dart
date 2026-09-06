@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../data/repositories/waypoint_repository.dart';
-import '../../data/models/waypoint.dart';
 import '../theme/lcars_theme.dart';
 import 'dossier_screen.dart';
 

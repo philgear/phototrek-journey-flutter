@@ -42,7 +42,7 @@ class _BucketListScreenState extends State<BucketListScreen> {
             decoration: BoxDecoration(
               color: LcarsTheme.surfaceDark,
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: LcarsTheme.amberPrimary.withOpacity(0.4)),
+              border: Border.all(color: LcarsTheme.amberPrimary.withValues(alpha: 0.4)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
